@@ -414,3 +414,97 @@ header {
     display: block;
     margin: 0 auto 25px;
 }
+
+/* Modern Contact Section */
+#contact .contact-container {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 35px;
+    background: #111c35;
+    border: 1px solid rgba(56, 189, 248, 0.25);
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#contact .section-description {
+    text-align: center;
+    line-height: 1.7;
+    margin-bottom: 22px;
+}
+
+#contact .github-link {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 30px;
+    padding: 10px 18px;
+    color: #38bdf8;
+    border: 1px solid #38bdf8;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+#contact .github-link:hover {
+    background: #38bdf8;
+    color: #0b1224;
+}
+
+#contact .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+#contact .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#contact .form-group label {
+    color: #e2e8f0;
+    font-weight: 500;
+}
+
+#contact .form-group input,
+#contact .form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 14px;
+    color: #f8fafc;
+    background: #0b1224;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    font: inherit;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#contact .form-group input:focus,
+#contact .form-group textarea:focus {
+    border-color: #38bdf8;
+}
+
+#contact .form-group textarea {
+    resize: vertical;
+}
+
+#contact .contact-form button {
+    width: 100%;
+    cursor: pointer;
+}
+
+#contact #form-status {
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    #contact .contact-container {
+        padding: 22px 16px;
+    }
+}
