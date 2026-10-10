@@ -18,6 +18,7 @@ navLinks.querySelectorAll("a").forEach(function (link) {
         menuToggle.textContent = "☰";
     });
 });
+
 /* Contact Form Validation */
 const contactForm = document.getElementById("contact-form");
 
@@ -57,9 +58,3 @@ if (contactForm) {
     });
 }
 
-        formStatus.textContent =
-            "Your details are valid! The form is not connected to email yet.";
-
-        contactForm.reset();
-    });
-}
