@@ -42,7 +42,7 @@ if (contactForm) {
             return;
         }
 
-        const recipient = "YOUR_EMAIL@example.com";
+        const recipient = "pathansezan011@gmail.com";
 
         const emailSubject = encodeURIComponent(subject);
         const emailBody = encodeURIComponent(
