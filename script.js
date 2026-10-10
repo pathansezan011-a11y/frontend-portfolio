@@ -42,6 +42,21 @@ if (contactForm) {
             return;
         }
 
+        const recipient = "YOUR_EMAIL@example.com";
+
+        const emailSubject = encodeURIComponent(subject);
+        const emailBody = encodeURIComponent(
+            `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+        );
+
+        formStatus.textContent =
+            "Opening your email application...";
+
+        window.location.href =
+            `mailto:${recipient}?subject=${emailSubject}&body=${emailBody}`;
+    });
+}
+
         formStatus.textContent =
             "Your details are valid! The form is not connected to email yet.";
 
