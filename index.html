@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title><title>Sezan Pathan | Frontend Developer</title></title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+     
+<nav class="navbar">
+    <a href="#home" class="logo">Portfolio<span>.</span></a>
+
+    <button
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="nav-links"
+        type="button"
+    >
+        ☰
+    </button>
+
+    <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+    </header>
+
+    <!-- Home Section -->
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="greeting">HELLO, WORLD! 👋</p>
+
+                <h1>I'm <span>Pathan Sezan</span></h1>
+
+                <h2>Aspiring Frontend Developer</h2>
+
+                <p class="intro">
+                    I create clean, responsive, and user-friendly
+                    websites using modern web technologies.
+                    I'm passionate about learning and building
+                    creative digital experiences.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary-btn">
+                        View My Projects
+                    </a>
+
+                    <a href="#contact" class="btn secondary-btn">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+<!-- About Section -->
+<section id="about" class="content-section">
+    <h2>About <span>Me</span></h2>
+    <p>
+        I'm a BCA student interested in frontend development
+        and creating responsive, user-friendly websites.
+        I enjoy learning new technologies and building
+        practical projects that solve real problems.
+    </p>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="content-section">
+    <h2>My <span>Skills</span></h2>
+
+    <div class="skills-container">
+        <div class="skill-card">HTML5</div>
+        <div class="skill-card">CSS3</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">PHP</div>
+        <div class="skill-card">MySQL</div>
+        <div class="skill-card">C / C++</div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="content-section">
+    <h2>My <span>Projects</span></h2>
+
+    <p class="section-description">
+        Here are some projects I've worked on to improve
+        my development skills.
+    </p>
+
+    <div class="projects-container">
+
+        <!-- Project 1 -->
+        <article class="project-card">
+            <div class="project-icon">🛒</div>
+            <h3>ElectroMart</h3>
+            <p>
+                An e-commerce website featuring product browsing,
+                a shopping cart, order management, and an invoice
+                option.
+            </p>
+            <div class="project-tags">
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>HTML</span>
+                <span>CSS</span>
+            </div>
+            <a href="#contact" class="project-link">
+                Ask Me About This Project →
+            </a>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+            <div class="project-icon">💻</div>
+            <h3>Personal Portfolio</h3>
+            <p>
+                A responsive personal website to showcase my
+                skills, projects, and journey as a web developer.
+            </p>
+            <div class="project-tags">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+            </div>
+            <a href="#home" class="project-link">
+                Explore Portfolio ↑
+            </a>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+            <div class="project-icon">🌐</div>
+            <h3>Web Development Practice</h3>
+            <p>
+                Small web development exercises created to
+                practice website layouts, styling, and
+                interactive features.
+            </p>
+            <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+            <a href="#contact" class="project-link">
+                Get In Touch →
+            </a>
+        </article>
+
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="content-section">
+    <h2>Contact <span>Me</span></h2>
+
+    <p class="section-description">
+        Have a project idea or an opportunity?
+        I'd love to hear from you.
+    </p>
+
+    <form id="contact-form" class="contact-form">
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+                minlength="2"
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="subject">Subject</label>
+            <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Enter subject"
+                required
+                minlength="3"
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Write your message..."
+                required
+                minlength="10"
+            ></textarea>
+        </div>
+
+        <button type="submit" class="btn primary-btn">
+            Send Message
+        </button>
+
+        <p id="form-status" role="status" aria-live="polite"></p>
+    </form>
+</section>
+</main>
+
+<footer class="footer">
+    <p>&copy; 2026 Sezan Pathan. Built with HTML, CSS & JavaScript.</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
+
