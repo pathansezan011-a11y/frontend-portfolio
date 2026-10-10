@@ -405,3 +405,12 @@ header {
         padding: 12px;
     }
 }
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #38bdf8;
+    display: block;
+    margin: 0 auto 25px;
+}
